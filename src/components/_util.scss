@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@mixin clearfix{
+  zoom:1;
+  &:after{
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    overflow:hidden;
+    width:0;
+    visibility:hidden;
+  }
+}
+
+.clearfix{
+  @include clearfix;
+}
+
+@mixin pull-left{
+  display: block;
+  float: left;
+}
+@mixin pull-right{
+  display: block;
+  float: right;
+}
+@mixin center-block{
+  display: block;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+// Hack
+@mixin inline-block{
+  display: inline-block;
+  *display:inline;
+  *zoom:1;
+}

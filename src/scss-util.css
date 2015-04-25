@@ -1,0 +1,315 @@
+/*
+* scss-util v0.1.0
+* https://github.com/ytamai/scss-util
+*
+* Copyright 2015 ytamai
+* Released under the MIT license
+*/
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html {
+  color: #000;
+  background: #fff;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-spacing: 0; 
+  border-collapse: collapse;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal; 
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  font-variant: normal; 
+  border: 0;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  *font-size: 100%;
+}
+
+legend {
+  color: #000;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden; 
+  clear: both;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  content: ".";
+}
+
+/* _util.scss */
+.pull-left {
+  display: block;
+  float: left;
+}
+
+.pull-right {
+  display: block;
+  float: right;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inline-block {
+  display: inline-block;
+
+  *display: inline;
+  *zoom: 1;
+}
+
+/* _layout.scss */
+.content .section {
+  display: block;
+  margin-top: 10px;
+}
+.content .box {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.content .group :first-child {
+  margin-left: 0;
+}
+
+/* _grid.scss */
+.grid-layout .col,
+.grid-layout .col4,
+.grid-layout .col4-margin,
+.grid-layout .col4-margin_narrow,
+.grid-layout .col3,
+.grid-layout .col3-margin,
+.grid-layout .col3-margin_narrow,
+.grid-layout .col2,
+.grid-layout .col2-margin,
+.grid-layout .col2-margin_narrow {
+  display: block;
+  float: left;
+}
+.grid-layout .col4 {
+  width: 256;
+  margin-left: 0;
+}
+.grid-layout .col4:first-child {
+  margin-left: 0;
+}
+.grid-layout .col4-margin {
+  width: 248.5;
+  margin-left: 10;
+}
+.grid-layout .col4-margin:first-child {
+  margin-left: 0;
+}
+.grid-layout .col4-margin_narrow {
+  width: 252.25;
+  margin-left: 5;
+}
+.grid-layout .col4-margin_narrow:first-child {
+  margin-left: 0;
+}
+.grid-layout .col3 {
+  width: 341.33333;
+  margin-left: 0;
+}
+.grid-layout .col3:first-child {
+  margin-left: 0;
+}
+.grid-layout .col3-margin {
+  width: 334.66667;
+  margin-left: 10;
+}
+.grid-layout .col3-margin:first-child {
+  margin-left: 0;
+}
+.grid-layout .col3-margin_narrow {
+  width: 338;
+  margin-left: 5;
+}
+.grid-layout .col3-margin_narrow:first-child {
+  margin-left: 0;
+}
+.grid-layout .col2 {
+  width: 512;
+  margin-left: 0;
+}
+.grid-layout .col2:first-child {
+  margin-left: 0;
+}
+.grid-layout .col2-margin {
+  width: 507;
+  margin-left: 10;
+}
+.grid-layout .col2-margin:first-child {
+  margin-left: 0;
+}
+.grid-layout .col2-margin_narrow {
+  width: 509.5;
+  margin-left: 5;
+}
+.grid-layout .col2-margin_narrow:first-child {
+  margin-left: 0;
+}
+
+/* _list.scss */
+.list-indent li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.list-indent .double {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+.list-indent-double li {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+.list-indent-dotted li {
+  padding-left: 5px;
+  text-indent: -5px;
+}
+.list-indent-arrow li {
+  padding-left: 12px; 
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAMAAABRhm3UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFKarh////0S5qSQAAAAJ0Uk5T/wDltzBKAAAAGklEQVR42mJgZGRkACMQwcAA5sB4EDmAAAMAAbkAGHH9JXQAAAAASUVORK5CYII=) no-repeat left center;
+}
+
+.list-double-indent li {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+.list-inline {
+  zoom: 1;
+}
+.list-inline:after {
+  display: block;
+  visibility: hidden; 
+  clear: both;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  content: ".";
+}
+.list-inline li {
+  display: block;
+  float: left;
+  padding-left: 10px; 
+  background: url(data:image/gif;base64,R0lGODlhBAAHAIABAIGtAAAAACH5BAEAAAEALAAAAAAEAAcAAAIIRB6Wu2AKUQEAOw==) no-repeat 0 50%;
+}
+.list-inline :first-child {
+  margin-left: 0;
+}
+
+/* _panel.scss */
+.panel-info {
+  border: solid 1px #999;
+}
+.panel-info .heading {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 24px; 
+  padding-left: 5px;
+  background: #ccc;
+}
+.panel-info .include {
+  padding: 10px;
+}

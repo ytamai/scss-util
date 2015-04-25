@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@mixin layout($margin){
+  .section{
+    display: block;
+    margin-top: $margin;
+  }
+  .box{
+    display: block;
+    margin-top:$margin;
+    margin-left: $margin;
+  }
+  .group{
+    :first-child{
+      margin-left: 0;
+    }
+  }
+}
