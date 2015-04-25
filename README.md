@@ -2,6 +2,11 @@
 
 My scss component partials
 
+## Source
+
+* [compiled](https://raw.githubusercontent.com/ytamai/scss-util/master/src/scss-util.css)
+* [scss](https://raw.githubusercontent.com/ytamai/scss-util/master/src/scss-util.scss)
+* [component partial](https://github.com/ytamai/scss-util/tree/master/src/components)
 
 ## Dependencies
 

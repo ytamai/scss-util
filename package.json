@@ -2,9 +2,13 @@
   "name": "scss-util",
   "version": "0.1.0",
   "description": "scss utilities",
-  "main": "index.html",
+  "main": "src/scss-util.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ytamai/scss-util.git"
   },
   "keywords": [
     "scss"
